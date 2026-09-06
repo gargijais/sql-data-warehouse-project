@@ -3,16 +3,13 @@
 DDL Script: Create Bronze Tables
 ===============================================================================
 Script Purpose:
-    This script creates tables in the 'Bonze' schema, dropping existing tables 
+    This script creates tables in the 'Bronze' schema, dropping existing tables 
     if they already exist.
 	  Run this script to re-define the DDL structure of 'Bronze' Tables
 ===============================================================================
 */
 
-/* ===================================================
-   1. CREATE TABLE: Bronze 'CRM Customer Info'
-   ==================================================== */
-
+-- CREATE TABLE: Bronze.crm_cust_info
 IF OBJECT_ID('Bronze.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE Bronze.crm_cust_info;
 CREATE TABLE Bronze.crm_cust_info (
@@ -26,10 +23,7 @@ CREATE TABLE Bronze.crm_cust_info (
 );
 GO
 
-/* ===================================================
-   2. CREATE TABLE: Bronze 'CRM Product Info'
-   =================================================== */
-
+-- CREATE TABLE: Bronze.crm_prd_info
 IF OBJECT_ID('Bronze.crm_prd_info', 'U') IS NOT NULL
     DROP TABLE Bronze.crm_prd_info;
 CREATE TABLE Bronze.crm_prd_info (
@@ -43,10 +37,7 @@ CREATE TABLE Bronze.crm_prd_info (
 );
 GO
 
-/* ===================================================
-   3. CREATE TABLE: Bronze 'CRM Sales Details'
-   ==================================================== */
-
+-- CREATE TABLE: Bronze.crm_sales_details
 IF OBJECT_ID('Bronze.crm_sales_details', 'U') IS NOT NULL
     DROP TABLE Bronze.crm_sales_details;
 CREATE TABLE Bronze.crm_sales_details (
@@ -62,10 +53,7 @@ CREATE TABLE Bronze.crm_sales_details (
 );
 GO
 
-/* ===================================================
-   4. CREATE TABLE: Bronze 'ERP Customer AZ12'
-   ==================================================== */
-
+-- CREATE TABLE: Bronze.erp_cust_az12
 IF OBJECT_ID('Bronze.erp_cust_az12', 'U') IS NOT NULL
     DROP TABLE Bronze.erp_cust_az12;
 CREATE TABLE Bronze.erp_cust_az12 (
@@ -75,10 +63,7 @@ CREATE TABLE Bronze.erp_cust_az12 (
 );
 GO
 
-/* ===================================================
-   5. CREATE TABLE: Bronze 'ERP Location A101'
-   ==================================================== */
-
+-- CREATE TABLE: Bronze.erp_loc_a101
 IF OBJECT_ID('Bronze.erp_loc_a101', 'U') IS NOT NULL
     DROP TABLE Bronze.erp_loc_a101;
 CREATE TABLE Bronze.erp_loc_a101 (
@@ -87,16 +72,13 @@ CREATE TABLE Bronze.erp_loc_a101 (
 );
 GO
 
-/* ===================================================
-   6. CREATE TABLE: Bronze 'ERP Px Category G1V2'
-   ==================================================== */
-
+-- CREATE TABLE: Bronze.erp_px_cat_g1v2
 IF OBJECT_ID('Bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
     DROP TABLE Bronze.erp_px_cat_g1v2;
 CREATE TABLE Bronze.erp_px_cat_g1v2 (
 	id           NVARCHAR(50),
 	cat          NVARCHAR(50),
 	subcat       NVARCHAR(50),
-	maintenace   NVARCHAR(50)
+	maintenance   NVARCHAR(50)
 );
 GO
