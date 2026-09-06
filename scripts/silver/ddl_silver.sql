@@ -9,10 +9,7 @@ Script Purpose:
 ===============================================================================
 */
 
-/* ===================================================
-   1. CREATE TABLE: Silver 'CRM Customer Info'
-   ==================================================== */
-
+-- CREATE TABLE: Silver.crm_cust_info
 IF OBJECT_ID('Silver.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE Silver.crm_cust_info;
 CREATE TABLE Silver.crm_cust_info (
@@ -27,10 +24,7 @@ CREATE TABLE Silver.crm_cust_info (
 );
 GO
 
-/* ===================================================
-   2. CREATE TABLE: Silver 'CRM Product Info'
-   =================================================== */
-
+-- CREATE TABLE: Silver.crm_prd_info
 IF OBJECT_ID('Silver.crm_prd_info', 'U') IS NOT NULL
     DROP TABLE Silver.crm_prd_info;
 CREATE TABLE Silver.crm_prd_info (
@@ -45,10 +39,7 @@ CREATE TABLE Silver.crm_prd_info (
 );
 GO
 
-/* ===================================================
-   3. CREATE TABLE: Silver 'CRM Sales Details'
-   ==================================================== */
-   
+-- CREATE TABLE: Silver.crm_sales_details
 IF OBJECT_ID('Silver.crm_sales_details', 'U') IS NOT NULL
     DROP TABLE Silver.crm_sales_details;
 CREATE TABLE Silver.crm_sales_details (
@@ -65,10 +56,7 @@ CREATE TABLE Silver.crm_sales_details (
 );
 GO
 
-/* ===================================================
-   4. CREATE TABLE: Silver 'ERP Customer AZ12'
-   ==================================================== */
-
+-- CREATE TABLE: Silver.erp_cust_az12
 IF OBJECT_ID('Silver.erp_cust_az12', 'U') IS NOT NULL
     DROP TABLE Silver.erp_cust_az12;
 CREATE TABLE Silver.erp_cust_az12 (
@@ -79,10 +67,7 @@ CREATE TABLE Silver.erp_cust_az12 (
 );
 GO
 
-/* ===================================================
-   5. CREATE TABLE: Silver 'ERP Location A101'
-   ==================================================== */
-
+-- CREATE TABLE: Silver.erp_loc_a101
 IF OBJECT_ID('Silver.erp_loc_a101', 'U') IS NOT NULL
     DROP TABLE Silver.erp_loc_a101;
 CREATE TABLE Silver.erp_loc_a101 (
@@ -92,10 +77,7 @@ CREATE TABLE Silver.erp_loc_a101 (
 );
 GO
 
-/* ===================================================
-   6. CREATE TABLE: Silver 'ERP Px Category G1V2'
-   ==================================================== */
-
+-- CREATE TABLE: Silver.erp_px_cat_g1v2
 IF OBJECT_ID('Silver.erp_px_cat_g1v2', 'U') IS NOT NULL
     DROP TABLE Silver.erp_px_cat_g1v2;
 CREATE TABLE Silver.erp_px_cat_g1v2 (
