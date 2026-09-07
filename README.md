@@ -71,7 +71,7 @@ For more details, refer to [docs/requirements.md](docs/requirements.md).
 
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
 
-## <img src="docs/data_architecture.png" width="24" height="24" valign="middle"> Data Architecture
+<h2> <img src="docs/data_architecture.png" width="24" height="24" valign="middle"> Data Architecture </h2>h2>
 
 1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
@@ -82,3 +82,11 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 ## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
+
+---
+
+## 🌟 About Me
+
+Hi there! I'm **Gargi Jaiswal**. I’m an IT professional and passionate YouTuber on a mission to share knowledge and make working with data enjoyable and engaging!
+
+Let's stay in touch! Feel free to connect with me on the following platforms:
