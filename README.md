@@ -85,7 +85,6 @@ data-warehouse-project/
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
 ├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
 │   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
 │   ├── data_flow.drawio                # Draw.io file for the data flow diagram
@@ -117,4 +116,5 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 Hi there! I'm **Gargi Jaiswal**. I’m a MBA Graduate(2024) specilizing in finance, with a growing passion for data analytics landscape. **This project represents my practical implementation of SQL** to solve real-world data warehousing and analytical problems.
 
 Let's stay in touch! Feel free to connect with me on the following platforms:
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gargi-jaiswal)
