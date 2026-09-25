@@ -234,7 +234,7 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @b
 	END TRY
 	BEGIN CATCH
 		PRINT '=============================================================';
-		PRINT 'ERROR OCCURED DURING LODING BRONZE LAYER';
+		PRINT 'ERROR OCCURED DURING LODING SILVER LAYER';
 		PRINT 'Error Message' + ERROR_MESSAGE();
 		PRINT 'Error Message' + CAST(ERROR_NUMBER() AS NVARCHAR);
 		PRINT 'Error Message' + CAST(ERROR_STATE() AS NVARCHAR);
